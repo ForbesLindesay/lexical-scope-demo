@@ -5,6 +5,7 @@ var browserify = require('browserify-middleware');
 
 browserify.settings('transform', ['rfileify']);
 
+app.favicon('./favicon.ico');
 app.file('/', './index.html');
 app.get('/client.js', browserify('./client.js'));
 app.file('/codemirror.css', 'code-mirror/codemirror.css');
