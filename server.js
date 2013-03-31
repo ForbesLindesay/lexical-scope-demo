@@ -2,10 +2,7 @@ var Stop = require('stop');
 var app = new Stop(process.argv[2] === '--compile' || process.argv[2] === '-c');
 
 var browserify = require('browserify-middleware');
-//minification is causing syntax errors
-//because of a crazy regexp so disable
-//it
-browserify.settings.production('minify', false);
+
 browserify.settings('transform', ['rfileify']);
 
 app.file('/', './index.html');
