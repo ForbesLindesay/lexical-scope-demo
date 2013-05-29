@@ -3,11 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "lexical-scope": "0.0.10",
-    "stop": "~1.1.0",
-    "browserify-middleware": "~1.5.0",
+    "lexical-scope": "0.0.11",
+    "browserify-middleware": "~1.10.0",
     "code-mirror": "~3.11.01",
-    "rfileify": "~1.1.0",
-    "rfile": "~1.0.0"
+    "rfileify": "~1.1.1",
+    "rfile": "~1.0.0",
+    "express": "~3.2.5",
+    "stop": "~2.1.0"
+  },
+  "devDependencies": {
+    "stop": "~2.1.1"
+  },
+  "scripts": {
+    "build": "stop"
   }
 }

@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf8"/>
     <title>Lexical Scope</title>
-    <link href="/codemirror.css" rel="stylesheet"/>
-    <link href="/theme.css" rel="stylesheet"/>
-    <link href="/foundation.css" rel="stylesheet"/>
+    <link href="/static/{{version}}/codemirror.css" rel="stylesheet"/>
+    <link href="/static/{{version}}/theme.css" rel="stylesheet"/>
+    <link href="/static/{{version}}/foundation.css" rel="stylesheet"/>
+    <!-- for `stop` we must add background.png as an href -->
+    <meta name="background-image" href="/static/{{version}}/background.png"/>
   </head>
   <body>
-    <a href="https://github.com/ForbesLindesay/lexical-scope-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/forkme.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/ForbesLindesay/lexical-scope-demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/static/{{version}}/forkme.png" alt="Fork me on GitHub"></a>
     <div class="row">
       <div class="large-12 columns">
         <h1>Lexical Scope Demo</h1>
+        <p>This demo uses Lexical Scope version {{lexicalscopeversion}}</p>
       </div>
     </div>
     <div class="row">
@@ -41,7 +44,7 @@
         <p>The lexical scope source code can be viewed at <a href="https://github.com/substack/lexical-scope">substack/lexical-scope</a></p>
       </div>
     </div>
-    <script src="/client.js"></script>
+    <script src="/static/{{version}}/client.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-35742700-2']);
