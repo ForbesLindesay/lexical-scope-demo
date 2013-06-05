@@ -1,9 +1,9 @@
 {
   "name": "lexical-scope-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "lexical-scope": "0.0.11",
+    "lexical-scope": "0.0.13",
     "browserify-middleware": "~1.10.0",
     "code-mirror": "~3.11.01",
     "rfileify": "~1.1.1",
