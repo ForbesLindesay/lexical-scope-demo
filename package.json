@@ -1,20 +1,26 @@
 {
   "name": "lexical-scope-demo",
   "version": "1.0.1",
+  "versionify": "1.0.1",
   "private": true,
   "dependencies": {
-    "lexical-scope": "0.0.13",
-    "browserify-middleware": "~1.10.0",
+    "lexical-scope": "0.0.14",
+    "browserify-middleware": "~1.12.0",
     "code-mirror": "~3.11.01",
-    "rfileify": "~1.1.1",
+    "rfileify": "~1.2.0",
     "rfile": "~1.0.0",
     "express": "~3.2.5",
     "stop": "~2.1.0"
   },
   "devDependencies": {
-    "stop": "~2.1.1"
+    "stop": "~2.1.1",
+    "rimraf": "~2.2.0",
+    "mandate": "~0.1.1",
+    "versionify": "~1.0.1"
   },
   "scripts": {
-    "build": "stop"
+    "prerelease": "versionify && rimraf out",
+    "release": "stop && mandate",
+    "postrelease": "rimraf out"
   }
 }
