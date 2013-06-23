@@ -1,7 +1,7 @@
 {
   "name": "lexical-scope-demo",
-  "version": "1.0.1",
-  "versionify": "1.0.1",
+  "version": "1.0.2",
+  "versionify": "1.0.2",
   "private": true,
   "dependencies": {
     "lexical-scope": "0.0.14",
